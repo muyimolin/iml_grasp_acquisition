@@ -1,0 +1,12 @@
+child_frame: kinect2_link
+parent_frame: pedestal
+transform:
+  rotation:
+    w: -0.346186
+    x: 0.60946
+    y: -0.597066
+    z: 0.390161
+  translation:
+    x: 0.247503
+    y: -0.103602
+    z:  0.256714
