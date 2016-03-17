@@ -42,20 +42,16 @@
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>kinect2_bridge</build_depend>
-  <build_depend>realsense_cam</build_depend>
   <build_depend>reflex_sf</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
-  <build_depend>soft_hand_ros_control</build_depend>
   <build_depend>message_generation</build_depend>
   <build_depend>reflex_sf_msgs</build_depend>
   <build_depend>std_msgs</build_depend>
   <run_depend>kinect2_bridge</run_depend>
-  <run_depend>realsense_cam</run_depend>
   <run_depend>reflex_sf</run_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>rospy</run_depend>
-  <run_depend>soft_hand_ros_control</run_depend>
   <run_depend>message_runtime</run_depend>
   <run_depend>std_msgs</run_depend>
   <run_depend>reflex_sf_msgs</run_depend>

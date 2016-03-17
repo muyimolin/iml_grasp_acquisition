@@ -5,13 +5,13 @@ project(iml_grasp_acquisition)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  kinect2_bridge
-  realsense_cam
   reflex_sf
   reflex_sf_msgs
   roscpp
   rospy
-  soft_hand_ros_control
+  std_msgs
+  message_generation
+#  soft_hand_ros_control
 )
 
 ## System dependencies are found with CMake's conventions
@@ -89,7 +89,8 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES iml_grasp_acquisition
-  CATKIN_DEPENDS  realsense_cam reflex_sf reflex_sf_msgs std_msgs roscpp rospy soft_hand_ros_control
+  CATKIN_DEPENDS reflex_sf reflex_sf_msgs std_msgs roscpp rospy 
+# soft_hand_ros_control
 #  DEPENDS system_lib
 )
 

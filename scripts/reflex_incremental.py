@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python 
 import rospy 
 import roslib
 roslib.load_manifest("reflex_sf_msgs")
 from reflex_sf_msgs.msg import Command, JointState 
-from iml_grasp_acquisition.srv import IncrementalClose, IncrementalCloseResponse, Open, OpenResponse, Preshape, PreshapeResponse, Close, CloseResponse
+from iml_grasp_acquisition.srv import *
 from threading import Lock
 
 class reflex_close:
@@ -23,7 +23,7 @@ class reflex_close:
 		initial_position = self.current_state.goal_pos
 		self.lock.release()
 
-		while( all([abs(x) < 0.2 for x in self.current_state.load]) ):
+		while( all([abs(x) < 0.20 for x in self.current_state.load]) ):
 			next_state = Command() 
 			next_state.position = [x+.1 for x in initial_position[0:3] ] + [initial_position[3]]
 			initial_position = next_state.position
